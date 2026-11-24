@@ -40,37 +40,37 @@ Motivering: En inloggad kund kan se en annan kunds resa och personuppgifter bara
 ### K6
 > Prisberäkningen (avsnitt 2) ligger i samma klass som bokningsflödet och ingen utvecklare vågar ändra den.
 
-Egenskap:
-Delegenskap:
-Motivering:
+Egenskap: Maintainability
+Delegenskap: Modularity
+Motivering: Prisberäkningen ligger i samma klass som bokningsflödet och ingen utvecklare vågar ändra den.
 
 ### K7
 > Adminpanelen (S2) går inte att använda på surfplattorna som teknikerna har i fält. Knapparna är för små och innehållet går utanför skärmen.
 
-Egenskap:
-Delegenskap:
-Motivering:
+Egenskap: Interaction capability
+Delegenskap: Operability
+Motivering: Teknikerna kan inte använda adminpanelen på sina surfplattor eftersom knapparna är för små och innehållet går utanför skärmen, vilket också visar brister i flexibility.
 
 ### K8
 > Om batteritemperaturen i en cykel överstiger 60 grader måste laddningen brytas och ett larm skickas till teknikerna.
 
-Egenskap:
-Delegenskap:
-Motivering:
+Egenskap: Safety
+Delegenskap: Operational constraint
+Motivering: Laddningen måste brytas när batteritemperaturen överstiger 60 grader så att cykeln inte skadas, och larmet till teknikerna visar också på Hazard warning.
 
 ### K9
 > API:et (S3) ska kunna ta emot positionsdata både från nuvarande styrenheter och från nästa modell, som skickar ett annat dataformat.
 
-Egenskap:
-Delegenskap:
-Motivering:
+Egenskap: Compatibility
+Delegenskap: Interoperability
+Motivering: API:et måste kunna ta emot och förstå positionsdata från två olika modeller av styrenheter som skickar olika dataformat.
 
 ### K10
 > En andra stad vill börja använda systemet. I dag kräver det kodändringar på tolv ställen eftersom stadens namn, priser och zoner står i koden.
 
-Egenskap:
-Delegenskap:
-Motivering:
+Egenskap: Flexibility
+Delegenskap: Adaptability
+Motivering: Systemet kan inte anpassas till en andra stad utan kodändringar på tolv ställen eftersom stadens namn, priser och zoner står i koden, vilket också visar brister i maintainability i det här fallet.
 
 ## 2. De fyra viktigaste egenskaperna för CityBike
 
