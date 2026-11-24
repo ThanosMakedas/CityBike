@@ -12,30 +12,30 @@ Motivering: Kartan är för långsam under belastning (9 sekunder för 300 anvä
 ### K2
 > En kund debiteras två gånger för samma resa när appen skickar betalningsbegäran två gånger vid dålig täckning.
 
-Egenskap:
-Delegenskap:
-Motivering:
+Egenskap: Functional suitability
+Delegenskap: Functional correctness
+Motivering: Kunden debiteras dubbelt för samma resa utan att veta om det när appen skickar betalningsbegäran två gånger vid dålig täckning. Det är teknisk fel.
 
 ### K3
 > När en styrenhet tappar mobiltäckning under en resa ska resan fortsätta och positionerna skickas när uppkopplingen kommer tillbaka.
 
-Egenskap:
-Delegenskap:
-Motivering:
+Egenskap: Reliability
+Delegenskap: Fault tolerance
+Motivering: Resan ska fortsätta trots att styrenheten tappar mobiltäckning samt att positionerna skickas när uppkopplingen kommer tillbaka visar också på Recoverability för det här fallet.
 
 ### K4
 > Nya kunder hittar inte knappen för att avsluta resan. Kundtjänst får 40 samtal per vecka om det.
 
-Egenskap:
-Delegenskap:
-Motivering:
+Egenskap: Interaction capability
+Delegenskap: Learnability
+Motivering: Knappen för att avsluta resan är inte tillräckligt ocj tydligt utformad, så nya kunder hittar den inte.
 
 ### K5
 > Genom att byta id i adressen till en resa kan en inloggad kund se en annan kunds resa.
 
-Egenskap:
-Delegenskap:
-Motivering:
+Egenskap: Security
+Delegenskap: Confidentiality
+Motivering: En inloggad kund kan se en annan kunds resa och personuppgifter bara genom att byta id i adressen, vilket är en personuppgiftsincident.
 
 ### K6
 > Prisberäkningen (avsnitt 2) ligger i samma klass som bokningsflödet och ingen utvecklare vågar ändra den.
@@ -116,4 +116,3 @@ Hänvisning:
 Uträkning:
 Svar:
 
-## 4. Skillnad mot ett annat par
