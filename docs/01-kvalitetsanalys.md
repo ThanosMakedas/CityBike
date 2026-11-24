@@ -113,6 +113,7 @@ Hänvisning: K5, avsnitt 5
 
 30 dagar = 720 timmar = 43 200 minuter.
 
-Uträkning: 100 - 99,7 = 0,3 procent av tiden får vara nedtid. 0,003 × 43 200 = 129,6 minuter.
-Svar: Högst 129,6 minuter nedtid är tillåten under 30 dagar, alltså ungefär 2 timmar och 10 minuter.
+Uträkning: 100 - 99,7 = 0,3 procent av tiden får vara nedtid
+ 0,003 × 43 200 = 129,6 minuter.
+Svar: Högst 129,6 minuter nedtid är tillåten under 30 dagar, som är ungefär 2 timmar och 10 minuter.
 
