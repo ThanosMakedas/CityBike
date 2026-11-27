@@ -13,7 +13,7 @@ public class PriceCalculator
             throw new ArgumentOutOfRangeException(nameof(seconds), "Tiden får inte vara negativ.");
         }
 
-        int startedMinutes = (seconds + 59) / 60;
+        int startedMinutes = seconds / 60 + (seconds % 60 == 0 ? 0 : 1);
         decimal price = UnlockFee + startedMinutes * PricePerStartedMinute;
 
         return Math.Min(price, MaxPrice);
