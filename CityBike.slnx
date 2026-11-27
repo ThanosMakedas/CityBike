@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/CityBike.Core/CityBike.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CityBike.Tests/CityBike.Tests.csproj" />
+  </Folder>
+</Solution>
