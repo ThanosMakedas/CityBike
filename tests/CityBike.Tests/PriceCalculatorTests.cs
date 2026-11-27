@@ -45,3 +45,17 @@ public class PriceCalculatorTests
         Assert.Throws<ArgumentOutOfRangeException>(() => _calculator.Calculate(-1));
     }
 }
+
+// Kontrollfrågor
+//
+// 1. Varför skriver du förväntat värde från kravet i stället för från vad koden returnerar?
+// Svar: Kravet säger vad som är rätt. Om värdet tas från koden testar man bara det koden
+// redan gör, och felet hittas aldrig.
+//
+// 2. Varför ska ett test bara ha en Act-del, och vad händer med felsökningen om det har två?
+// Svar: Om testet har två Act-delar och blir rött vet man inte vilken av dem som är fel.
+// Med en Act-del pekar testet direkt på felet.
+//
+// 3. Vad hade hänt om du hade skrivit 12,50 som förväntat värde i steg 3?
+// Svar: Testet hade blivit grönt fast koden har fel. Då hade felet aldrig hittats.
+
