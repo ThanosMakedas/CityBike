@@ -82,4 +82,16 @@ public class PriceCalculatorTests
 
         Assert.Equal(250m, price);
     }
+
+    // Kontrollfrågor moment 2
+    //
+    // 1. Varför är 60 och 61 sekunder bättre testvärden än 30 och 90?
+    // Svar: 60 och 61 ligger vid gränsen. Där blir det ofta fel. 30 och 90 hittar inte felet.
+    //
+    // 2. Vad skiljer ett gränsvärde från ett vanligt värde i en ekvivalensklass?
+    // Svar: Ett gränsvärde ligger i kanten av klassen. Ett vanligt värde ligger i mitten.
+    //
+    // 3. Hur kan ett test som är grönt ändå inte skydda mot fel? Ge ett exempel från PriceCalculator.
+    // Svar: Testet kan ha fel värde, eller så saknas ett test. Alla tester var gröna,
+    // men int.MaxValue gav ett negativt pris.
 }
